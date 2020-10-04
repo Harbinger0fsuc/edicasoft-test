@@ -1,0 +1,44 @@
+
+/*==================
+STYLES FOR INPUT COMPONENTS
+===================*/
+
+// MAIN INPUT and TEXTAREA STYLES
+
+.input, .textarea {
+    display: inline-block;
+    border: none;
+    
+    &__main {
+        font-family: $ff-main;
+        color: $text-color-input;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 24px;
+        border-radius: 6px;
+        background-color: $bg-color-primary;
+        padding: 13px 20px 12px 33px;
+
+        &:focus {
+            outline: 4px dotted lightblue;
+        }
+
+        &::placeholder {
+            color: currentColor;
+        }
+
+        &--fw {
+            width: 100%;
+            flex-basis: 100%;
+        }
+    }   
+}
+
+// SPECIFIC STYLES FOR TEXTAREA
+
+// .textarea {
+
+//     &__main {
+
+//     }
+// }

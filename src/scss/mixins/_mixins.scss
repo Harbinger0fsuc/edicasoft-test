@@ -1,0 +1,25 @@
+// MIXIN FOR ROUND LINKS
+@mixin roundLink($width, $height, $display, $border) {
+    width: $width;
+    height: $height;
+    border-radius: 50%;
+    display: $display;
+    border: $border;
+}
+
+
+// MIXIN FOR BACKGROUND IMAGE
+@mixin backImage($url, $repeat, $pos, $size) {
+    background-image: url($url);
+    background-repeat: $repeat;
+    background-position: $pos;
+    background-size: $size;
+}
+
+// FLEX MIXINS
+@mixin flexCommon($display, $jst-content: flex-start, $alg-items: stretch, $direction: row) {
+    display: $display;
+    justify-content: $jst-content;
+    align-items: $alg-items;
+    flex-direction: $direction;
+} 

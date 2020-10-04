@@ -1,0 +1,520 @@
+/* IMPORT FILES GENERAL FILES */
+/* ==== This file includes overridden variable/mixins/css styles for other libraries ==== */
+/* SLICK OVERRIDEN STYLES */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* Don't kill focus outline for keyboard users: http://24ways.org/2009/dont-lose-your-focus */
+a:hover, a:active {
+  outline: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: "Roboto-Bold-500-normal";
+  src: url("../fonts/Roboto-Bold-500-normal.woff2") format("woff2"), url("../fonts/Roboto-Bold-500-normal.woff") format("woff");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto-Regular-400-normal";
+  src: url("../fonts/Roboto-Regular-400-normal.woff2") format("woff2"), url("../fonts/Roboto-Regular-400-normal.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal; }
+
+/* =============================== 
+        VARIABLES FOR COLORS 
+==================================*/
+/* =============================== 
+        VARIABLES FOR FONTS 
+==================================*/
+/* =============================== 
+        MISCELLANEOUS VARIABLES 
+==================================*/
+/* =============================== 
+        SASS MAPs FOR BREAKPOINTS
+==================================*/
+/* =============================== 
+        SASS MAPs FOR Z-INDEXs
+==================================*/
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html,
+body {
+  color: #7a7a7a;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 100%;
+  position: relative; }
+
+body.footer--sticky {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  body.footer--sticky header, body.footer--sticky footer, body.footer--sticky .intro {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto; }
+  body.footer--sticky main {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto; }
+
+.container {
+  width: 100%;
+  max-width: 1130px;
+  padding: 0 30px;
+  margin: 0 auto; }
+  .container--intro {
+    max-width: 1350px; }
+
+a {
+  text-decoration: none;
+  color: #7a7a7a; }
+
+input:focus,
+button:focus,
+textarea:focus {
+  outline: none; }
+
+textarea {
+  resize: none;
+  overflow-y: auto; }
+
+/* ==== MEDIA QUERIES FOR BASE STYLES ==== */
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0 15px; } }
+
+/* ==== This file classes for different utilities styles ==== */
+/* ==== GENERAL UTILITIES ==== */
+body.no--scroll {
+  overflow: hidden; }
+
+.visually--hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden; }
+
+/* ==== IMAGE UTILITIES ==== */
+.image--fluid {
+  width: 100%;
+  max-width: 100%;
+  display: block; }
+
+/* ==== BUTTON UTILITIES ==== */
+.btn--reset {
+  font-family: inherit;
+  color: inherit;
+  background: none;
+  padding: 0;
+  border: none;
+  outline: none; }
+
+/* ==== COLOR UTILITIES ==== */
+/* ==== MEDIA QUERIES FOR UTILITIES ==== */
+/* IMPORT FILES FROM LIBRARIES */
+/* IMPORT COMPONENT FILES */
+/* =============================== 
+    IMPORT OF GENERAL COMPONENTS' FILES
+==================================*/
+/* =============================== 
+    IMPORT OF SPECIFIC COMPONENTS' FILES
+==================================*/
+/*==================
+STYLES FOR TITLE COMPONENTS
+===================*/
+.main__title {
+  color: #000;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 38px;
+  letter-spacing: -1px; }
+
+.secondary__title {
+  color: #000;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 34px;
+  letter-spacing: -0.5px; }
+
+/* ==== MEDIA QUERIES FOR THE COMPONENT ==== */
+@media screen and (max-width: 767px) {
+  .main__title {
+    font-size: 26px;
+    letter-spacing: -0.9px; } }
+
+/* =============================== 
+    IMPORT OF SPECIFIC COMPONENTS' FILES
+==================================*/
+/*==================
+STYLES FOR INPUT COMPONENTS
+===================*/
+.input, .textarea {
+  display: inline-block;
+  border: none; }
+  .input__main, .textarea__main {
+    font-family: "Open Sans", sans-serif;
+    color: #1c1c1c;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    border-radius: 6px;
+    background-color: #fff;
+    padding: 13px 20px 12px 33px; }
+    .input__main:focus, .textarea__main:focus {
+      outline: 4px dotted lightblue; }
+    .input__main::-webkit-input-placeholder, .textarea__main::-webkit-input-placeholder {
+      color: currentColor; }
+    .input__main::-moz-placeholder, .textarea__main::-moz-placeholder {
+      color: currentColor; }
+    .input__main:-ms-input-placeholder, .textarea__main:-ms-input-placeholder {
+      color: currentColor; }
+    .input__main::-ms-input-placeholder, .textarea__main::-ms-input-placeholder {
+      color: currentColor; }
+    .input__main::placeholder, .textarea__main::placeholder {
+      color: currentColor; }
+    .input__main--fw, .textarea__main--fw {
+      width: 100%;
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%; }
+
+/*==================
+STYLES FOR BUTTON COMPONENTS
+===================*/
+.btn__main {
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 26px;
+  border-radius: 6px;
+  background-color: #0AD9C6;
+  padding: 12px 25px;
+  cursor: pointer;
+  -webkit-transition: color .3s, background-color .3s;
+  transition: color .3s, background-color .3s; }
+  .btn__main:hover {
+    color: #fff;
+    background-color: #09c1b0; }
+  .btn__main:focus {
+    outline: 4px dotted lightblue; }
+  .btn__main--fw {
+    width: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%; }
+
+/* IMPORT LAYOUT FILES */
+/* ==== INTRO SECTION ==== */
+.intro {
+  position: relative;
+  background-color: #e3f5f2;
+  min-height: 770px; }
+  .intro > .container--intro, .intro__inner {
+    min-height: inherit; }
+  .intro__inner {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 50px 0; }
+  .intro__wrapper {
+    width: 100%;
+    max-width: 307px;
+    padding-top: 22px; }
+  .intro__subtitle {
+    color: #999999;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    margin-bottom: 7px; }
+  .intro__title {
+    margin-bottom: 29px; }
+  .intro__desc {
+    line-height: 28px; }
+    .intro__desc > *:not(:last-child) {
+      margin-bottom: 15px; }
+  .intro-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 411px;
+    max-height: 650px;
+    border-radius: 10px;
+    background-color: rgba(28, 28, 28, 0.9);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    overflow-y: auto; }
+    .intro-form__inner {
+      padding: 78px 53px 70px 59px; }
+    .intro-form__wrapper {
+      margin-bottom: 15px; }
+      .intro-form__wrapper > *:not(:last-child) {
+        margin-bottom: 20px; }
+    .intro-form__trust {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 23px; }
+      .intro-form__trust::before {
+        content: "*";
+        display: inline-block;
+        margin-right: 6px; }
+    .intro-form__trust-link:hover {
+      text-decoration: underline; }
+  .intro__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: inherit; }
+
+@media screen and (max-width: 1240px) {
+  .intro__wrapper {
+    max-width: 24%; } }
+
+/* ==== MEDIA QUERIES FOR THIS SECTION ==== */
+@media screen and (max-width: 1024px) {
+  .intro__wrapper {
+    max-width: 350px; }
+  .intro-form {
+    right: 35%;
+    left: auto;
+    max-width: 343px;
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%); }
+    .intro-form__inner {
+      padding: 48px 33px 44px 29px; }
+  .intro__bg {
+    width: 35%; } }
+
+@media screen and (max-width: 991px) {
+  .intro__wrapper {
+    max-width: 307px;
+    padding-top: 5px; }
+  .intro-form {
+    right: 27%;
+    -webkit-transform: translate(55%, -50%);
+    transform: translate(55%, -50%); }
+    .intro-form__inner {
+      padding: 40px 23px 35px 22px; }
+  .intro__bg {
+    width: 27%; } }
+
+@media screen and (max-width: 767px) {
+  .intro__inner {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .intro__wrapper {
+    max-width: 82%;
+    margin-bottom: 38px;
+    padding-top: 0; }
+  .intro-form {
+    position: initial;
+    max-width: 100%;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); }
+  .intro__bg {
+    width: 16%; } }
+
+/* ==== FEATURES SECTION ==== */
+.features {
+  padding: 70px 0; }
+  .features__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .features__items > *:not(:last-child) {
+      margin-bottom: 50px; }
+  .features-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .features-item:nth-child(even) .features-item__img {
+      -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+      order: 2; }
+    .features-item:nth-child(even) .features-item__info {
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1;
+      padding-left: 0;
+      padding-right: 75px; }
+    .features-item__img {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 627px;
+      flex: 0 1 627px;
+      height: 350px; }
+      .features-item__img img {
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover; }
+    .features-item__info {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+      flex: 1 1;
+      padding-left: 75px; }
+    .features-item__title {
+      margin-bottom: 30px; }
+    .features-item__desc {
+      line-height: 28px; }
+      .features-item__desc > *:not(:last-child) {
+        margin-bottom: 15px; }
+
+/* ==== MEDIA QUERIES FOR THIS SECTION ==== */
+@media screen and (max-width: 1024px) {
+  .features {
+    padding: 50px 0; }
+    .features__items > *:not(:last-child) {
+      margin-bottom: 40px; }
+    .features-item:nth-child(even) .features-item__info {
+      padding-right: 52px; }
+    .features-item__img {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+      flex: 0 1 50%;
+      height: 270px; }
+    .features-item__info {
+      padding-left: 52px; } }
+
+@media screen and (max-width: 768px) {
+  .features {
+    padding: 40px 0; }
+    .features__items > *:not(:last-child) {
+      margin-bottom: 30px; }
+    .features-item:nth-child(even) .features-item__img {
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1; }
+    .features-item:nth-child(even) .features-item__info {
+      -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+      order: 2;
+      padding-right: 0;
+      padding-left: 52px; }
+    .features-item__img {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 49%;
+      flex: 0 1 49%;
+      height: 350px; }
+    .features-item__info {
+      padding-left: 52px; } }
+
+@media screen and (max-width: 767px) {
+  .features__items > *:not(:last-child) {
+    margin-bottom: 40px; }
+  .features-item:nth-child(even) .features-item__info {
+    padding-left: 30px; }
+  .features-item__info {
+    padding-left: 30px; }
+  .features-item__title {
+    margin-bottom: 20px; } }
+
+@media screen and (max-width: 600px) {
+  .features-item {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .features-item:nth-child(even) .features-item__info {
+      padding-left: 0; }
+    .features-item > *:not(:last-child) {
+      margin-bottom: 23px; }
+    .features-item__img {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+      flex: 0 1 100%;
+      height: 237px; }
+    .features-item__info {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+      flex: 0 1 100%;
+      padding-left: 0; }
+    .features-item__title {
+      margin-bottom: 17px; } }
+
+@media screen and (max-width: 374px) {
+  .features-item__img {
+    height: auto; }
+    .features-item__img img {
+      height: auto; } }
+
+/* IMPORT HACKS FILE */
+/* SOME TWEAKS FOR IE 10-11*/
+@media all and (-ms-high-contrast: none) {
+  .intro__wrapper {
+    padding-top: 210px; } }

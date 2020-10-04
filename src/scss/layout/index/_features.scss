@@ -1,0 +1,199 @@
+/* ==== FEATURES SECTION ==== */
+.features {
+  padding: 70px 0;
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+
+    > *:not(:last-child) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+
+    &:nth-child(even) {
+      .features-item__img {
+        order: 2;
+      }
+
+      .features-item__info {
+        order: 1;
+        padding-left: 0;
+        padding-right: 75px;
+      }
+    }
+
+    &__img {
+      flex: 0 1 627px;
+      height: 350px;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__info {
+      flex: 1 1;
+      padding-left: 75px;
+    }
+
+    &__title {
+      margin-bottom: 30px;
+    }
+
+    &__desc {
+      line-height: 28px;
+
+      > *:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+/* ==== MEDIA QUERIES FOR THIS SECTION ==== */
+
+@media screen and (max-width: map-get($map: $breakpoints, $key: extralargeTablet)) {
+  .features {
+    padding: 50px 0;
+
+    &__items {
+      > *:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+
+    &-item {
+      &:nth-child(even) {
+        .features-item__info {
+          padding-right: 52px;
+        }
+      }
+
+      &__img {
+        flex: 0 1 50%;
+        height: 270px;
+      }
+
+      &__info {
+        padding-left: 52px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: map-get($map: $breakpoints, $key: largeTablet)) {
+  .features {
+    padding: 40px 0;
+
+    &__items {
+      > *:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+    &-item {
+      &:nth-child(even) {
+        .features-item__img {
+          order: 1;
+        }
+
+        .features-item__info {
+          order: 2;
+          padding-right: 0;
+          padding-left: 52px;
+        }
+      }
+
+      &__img {
+        flex: 0 1 49%;
+        height: 350px;
+      }
+
+      &__info {
+        padding-left: 52px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: map-get($map: $breakpoints, $key: largeTablet) - 1) {
+  .features {
+    &__items {
+      > *:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+
+    &-item {
+      &:nth-child(even) {
+        .features-item__info {
+          padding-left: 30px;
+        }
+      }
+
+      &__info {
+        padding-left: 30px;
+      }
+
+      &__title {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: map-get($map: $breakpoints, $key: smallTablet)) {
+  .features {
+    
+    &-item {
+      flex-wrap: wrap;
+
+      &:nth-child(even) {
+        .features-item__info {
+          padding-left: 0;
+        }
+      }
+
+      > *:not(:last-child) {
+        margin-bottom: 23px;
+      }
+
+      &__img {
+        flex: 0 1 100%;
+        height: 237px;
+      }
+
+      &__info {
+        flex: 0 1 100%;
+        padding-left: 0;
+      }
+      
+      &__title {
+        margin-bottom: 17px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: map-get($map: $breakpoints, $key: mediumMob) - 1) {
+  .features {
+
+    &-item {
+
+      &__img {
+        height: auto;
+
+        img {
+          height: auto;
+        }
+      }
+    }
+  }
+}

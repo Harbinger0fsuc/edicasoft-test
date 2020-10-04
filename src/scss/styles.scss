@@ -1,0 +1,30 @@
+/* IMPORT FILES GENERAL FILES */
+@import "overrides";
+@import "normalize";
+@import "mixins/mixins";
+@import "mixins/fontMixin";
+@import "fonts";
+@import "variables";
+@import "maps";
+@import "base";
+@import "utilities";
+
+/* IMPORT FILES FROM LIBRARIES */
+
+/* IMPORT COMPONENT FILES */
+@import "components/components";
+
+/* IMPORT LAYOUT FILES */
+// General
+@import "layout/header";
+@import "layout/intro";
+
+// Files for index page
+@import "layout/index/features";
+
+// General
+@import "layout/footer";
+
+/* IMPORT HACKS FILE */
+@import "hacks";
+ 

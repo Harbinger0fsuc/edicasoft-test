@@ -1,0 +1,33 @@
+/* =============================== 
+        VARIABLES FOR COLORS 
+==================================*/
+// TEXT COLOR VARIABLES
+$text-color-primary: #7a7a7a;
+$text-color-secondary: #000;
+$text-color-lightgray: #999999;
+$text-color-input: #1c1c1c;
+
+// BG COLOR VARIABLES
+$bg-color-primary: #fff;
+$bg-color-secondary: #e3f5f2;
+$bg-color-intro: $bg-color-secondary;
+$bg-color-info: #0AD9C6;
+$bg-color-intro-form: #1c1c1c;
+$bg-color-btn: $bg-color-info;
+
+/* =============================== 
+        VARIABLES FOR FONTS 
+==================================*/
+// FONT VARIABLES
+$fz-primary: 16px;
+$fz-title-main: 30px;
+$fz-title-secondary: 22px;
+$ff-main: "Open Sans",
+sans-serif;
+
+/* =============================== 
+        MISCELLANEOUS VARIABLES 
+==================================*/
+$main-container: 1130px;
+$main-container-intro: 1350px;
+$transition-common: all .3s;

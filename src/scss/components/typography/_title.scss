@@ -1,0 +1,28 @@
+/*==================
+STYLES FOR TITLE COMPONENTS
+===================*/
+
+.main__title {
+  color: $text-color-secondary;
+  font-size: $fz-title-main;
+  font-weight: bold;
+  line-height: 38px;
+  letter-spacing: -1px;
+}
+
+.secondary__title {
+  color: $text-color-secondary;
+  font-size: $fz-title-secondary;
+  font-weight: bold;
+  line-height: 34px;
+  letter-spacing: -0.5px;
+}
+
+/* ==== MEDIA QUERIES FOR THE COMPONENT ==== */
+
+@media screen and (max-width: map-get($map: $breakpoints, $key: largeTablet) - 1) {
+  .main__title {
+    font-size: 26px;
+    letter-spacing: -0.9px;
+  }
+}

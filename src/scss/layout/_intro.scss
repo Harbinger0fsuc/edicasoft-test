@@ -1,0 +1,189 @@
+/* ==== INTRO SECTION ==== */
+.intro {
+  position: relative;
+  background-color: $bg-color-intro;
+  min-height: 770px;
+
+  > .container--intro,
+  &__inner {
+    min-height: inherit;
+  }
+
+  &__inner {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 50px 0;
+  }
+
+  &__wrapper {
+      width: 100%;
+      max-width: 307px;
+      padding-top: 22px;
+  }
+
+  &__subtitle {
+      color: $text-color-lightgray;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 20px;
+      letter-spacing: 1.1px;
+      text-transform: uppercase;
+      margin-bottom: 7px;
+  }
+
+  &__title {
+      margin-bottom: 29px;
+  }
+
+  &__desc {
+    line-height: 28px;
+    
+    > *:not(:last-child) {
+        margin-bottom: 15px;
+    }
+  }
+
+  &-form {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      max-width: 411px;
+      max-height: 650px;
+      border-radius: 10px;
+      background-color: rgba($bg-color-intro-form, .9);
+      transform: translate(-50%, -50%);
+      z-index: map-get($map: $z-index, $key: commonOver);
+      overflow-y: auto;
+  
+
+      &__inner {
+          padding: 78px 53px 70px 59px
+      }
+
+      &__wrapper {
+          margin-bottom: 15px;
+
+          > *:not(:last-child) {
+              margin-bottom: 20px;
+          }
+      }
+
+      &__trust {
+          display: flex;
+          font-size: 13px;
+          font-weight: 300;
+          line-height: 23px;
+
+          &::before {
+              content: "*";
+              display: inline-block;
+              margin-right: 6px;
+          }
+      }
+
+      &__trust-link {
+
+        &:hover {
+            text-decoration: underline;
+        }
+      }
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: inherit;
+  }
+}
+
+
+@media screen and (max-width: map-get($map: $breakpoints, $key: smallPC)) {
+    .intro {
+
+        &__wrapper {
+            max-width: 24%;
+        }
+    }
+}
+
+/* ==== MEDIA QUERIES FOR THIS SECTION ==== */
+@media screen and (max-width: map-get($map: $breakpoints, $key: extralargeTablet)) {
+    .intro {
+
+        &__wrapper {
+            max-width: 350px;
+        }
+
+        &-form {
+            right: 35%;
+            left: auto;
+            max-width: 343px;
+            transform: translate(50%,-50%);
+
+            &__inner {
+                padding: 48px 33px 44px 29px;
+            }
+        }
+
+        &__bg {
+            width: 35%;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    .intro {
+
+        &__wrapper {
+            max-width: 307px;
+            padding-top: 5px;
+        }
+
+        &-form {
+            right: 27%;
+            transform: translate(55%,-50%);
+
+            &__inner {
+                padding: 40px 23px 35px 22px;
+            }
+        }
+
+        &__bg {
+            width: 27%;
+        }
+    }
+}
+
+@media screen and (max-width: map-get($map: $breakpoints, $key: largeTablet) - 1) {
+    .intro {
+
+        &__inner {
+            flex-wrap: wrap;
+        }
+
+        &__wrapper {
+            max-width: 82%;
+            margin-bottom: 38px;
+            padding-top: 0;
+        }
+
+        &-form {
+            position: initial;
+            max-width: 100%;
+            transform: translate(0, 0);
+        }
+
+        &__bg {
+            width: 16%;
+        }
+    }
+}

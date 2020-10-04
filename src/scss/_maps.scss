@@ -1,0 +1,40 @@
+/* =============================== 
+        SASS MAPs FOR BREAKPOINTS
+==================================*/
+$breakpoints: ( 
+    // PC
+    "extralargePC": 1920px,
+    "largePC": 1600px,
+    "mediumPC": 1366px,
+    "smallPC": 1240px,
+    // Tablet
+    "extralargeTablet": 1024px,
+    "largeTablet": 768px,
+    "mediumTablet": 720px,
+    "smallTablet": 600px,
+    // Mobile
+    "extralargeMob": 568px,
+    "largeMob": 480px,
+    "mediumMob": 375px,
+    "smallMob": 320px
+);
+
+$breakpoints-uncommon: ( 
+    // Super large devices
+    "superlargeDevice": 2000px
+);
+
+/* =============================== 
+        SASS MAPs FOR Z-INDEXs
+==================================*/
+$z-index: (
+    modal: 50,
+    navigation: 40,
+    widget: 35,
+    header: 30,
+    commonOver: 20,
+    common: 10,
+    default: 1,
+    below: -1,
+    pit: -9000
+);

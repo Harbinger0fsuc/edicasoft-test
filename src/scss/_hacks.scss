@@ -1,0 +1,11 @@
+/* SOME TWEAKS FOR IE 10-11*/
+@media all and (-ms-high-contrast: none) {
+  .intro {
+
+    &__wrapper {
+      padding-top: 210px;
+    }
+  }
+}
+
+// *::-ms-backdrop,
